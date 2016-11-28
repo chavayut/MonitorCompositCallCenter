@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrator.monitorcompositcallcenter.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/agent_monitor"
+            android:textSize="24sp" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/listView"
+            android:layout_marginTop="10dp"
+            tools:ignore="NestedScrolling,UnknownId"
+            android:layout_weight="11.05" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_weight="2.44">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.78"
+                tools:ignore="NestedWeights">
+
+                <Button
+                    android:text="@string/agent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button5"
+                    android:layout_weight="1"
+                    tools:ignore="ButtonStyle,NestedWeights,SmallSp"
+                    android:onClick="Agent"
+                    android:textSize="8sp" />
+
+                <Button
+                    android:text="@string/campaign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button6"
+                    android:layout_weight="1"
+                    tools:ignore="ButtonStyle,SmallSp"
+                    android:onClick="Campaign"
+                    android:textSize="8sp"/>
+
+                <Button
+                    android:text="@string/queue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button7"
+                    android:layout_weight="1"
+                    tools:ignore="ButtonStyle,SmallSp"
+                    android:onClick="Queue"
+                    android:textSize="8sp"/>
+
+                <Button
+                    android:text="@string/ivr_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button8"
+                    android:layout_weight="1"
+                    tools:ignore="ButtonStyle,SmallSp"
+                    android:onClick="IVR"
+                    android:textSize="8sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:text="@string/how_to_show_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button9"
+                    android:layout_weight="1"
+                    tools:ignore="ButtonStyle,NestedWeights" />
+
+                <Button
+                    android:text="@string/toexit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button10"
+                    android:layout_weight="1"
+                    tools:ignore="ButtonStyle" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
